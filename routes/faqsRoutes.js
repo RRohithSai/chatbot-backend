@@ -137,17 +137,16 @@ router.get("/_debug/list-files", (req, res) => {
   const files = fs.readdirSync(dir);
   const normalized = files.map(f => f.toLowerCase());
   const expected = [
-    "cancellation",
-    "coupons",
-    "feedback",
-    "general_inquiry",
-    "giftcard",
-    "okalspecials",
-    "okalsupersaver",
-    "orders_and_products",
-    "payment",
+    "Cancellation",
+    "Coupons",
+    "General_Enquiry",
+    "Giftcard",
+    "Okalspecials",
+    "Okalsupersaver",
+    "Orders_and_Products",
+    "Payment",
     "Returns_and_replacement",
-    "wallet"
+    "Wallet"
   ];
   const missing = expected.filter(cat => !normalized.includes(`${cat}.json`));
   res.json({ ok: true, dir, files, missing });
@@ -155,17 +154,16 @@ router.get("/_debug/list-files", (req, res) => {
 
 // All FAQ categories (use canonical slugs)
 const categories = [
-  "cancellation",
-  "coupons",
-  "feedback",
-  "general_inquiry",
-  "giftcard",
-  "okalspecials",
-  "okalsupersaver",
-  "orders_and_products",
-  "payment",
+  "Cancellation",
+  "Coupons",
+  "General_Enquiry",
+  "Giftcard",
+  "Okalspecials",
+  "Okalsupersaver",
+  "Orders_and_Products",
+  "Payment",
   "Returns_and_replacement", // <-- corrected
-  "wallet"
+  "Wallet"
 ];
 
 // Helper: normalize incoming slug -> canonical form (underscores, lower)
