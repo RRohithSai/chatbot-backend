@@ -3,7 +3,11 @@
   "faqs": [
     {
       "question": "What is your return policy?",
+<<<<<<< HEAD
       "answer": "We accept returns within 2-3 hours of delivery for dammaged items."
+=======
+      "answer": "We accept returns within 24 hours of delivery for perishable items and 7 days for non-perishable items, provided they are in their original condition."
+>>>>>>> eadda9f (final commit)
     },
     {
       "question": "How can I request a return or replacement?",
@@ -35,7 +39,11 @@
     },
     {
       "question": "How long does a replacement take to arrive?",
+<<<<<<< HEAD
       "answer": "Replacements are typically delivered within 2-3 hours, depending on item availability and your location."
+=======
+      "answer": "Replacements are typically delivered within 1–2 business days, depending on item availability and your location."
+>>>>>>> eadda9f (final commit)
     },
     {
       "question": "What happens if I’m not available during the return pickup?",

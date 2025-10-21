@@ -63,32 +63,91 @@
 //   console.log(`Server running on port ${PORT}`);
 // });
 
+// <<<<<<< HEAD
+// const express = require("express");
+// const cors = require("cors");
+// const ordersRoutes = require("./routes/ordersRoutes");
+// const faqsRoutes = require("./routes/faqsRoutes");
+
+// const app = express();
+// const PORT = process.env.PORT || 5000;
+
+// app.use(cors());
+// app.use(express.json());
+
+// Base route
+// app.get("/", (req, res) => {
+//   res.send("E-commerce Backend API is running...");
+// });
+
+// Orders routes
+// app.use("/api/orders", ordersRoutes);
+
+// FAQs routes
+// app.use("/api/faqs", faqsRoutes);
+
+// Error handling
+// app.use((req, res) => {
+//   res.status(404).json({ message: "Route not found." });
+// });
+
+// // Start server
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// const express = require("express");
+// const cors = require("cors");
+// const ordersRoutes = require("./routes/ordersRoutes");
+// const faqsRoutes = require("./routes/faqsRoutes");
+
+// const app = express();
+// const PORT = process.env.PORT || 5000;
+
+// app.use(cors());
+// app.use(express.json());
+
+// // Base route
+// app.get("/", (req, res) => {
+//   res.send("E-commerce Backend API is running...");
+// });
+
+// // Orders routes
+// app.use("/api/orders", ordersRoutes);
+
+// // FAQs routes
+// app.use("/api/faqs", faqsRoutes);
+
+// // Error handling
+// app.use((req, res) => {
+//   res.status(404).json({ message: "Route not found." });
+// });
+
+// // Start server
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+
+
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const ordersRoutes = require("./routes/ordersRoutes");
+const mongoose = require("mongoose");
 const faqsRoutes = require("./routes/faqsRoutes");
 
 const app = express();
-const PORT = process.env.PORT || 5000;
-
 app.use(cors());
 app.use(express.json());
 
-// Base route
-app.get("/", (req, res) => {
-  res.send("E-commerce Backend API is running...");
-});
+const PORT = process.env.PORT || 5000;
+const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/okal_faqs";
 
-// Orders routes
-app.use("/api/orders", ordersRoutes);
+// MongoDB connection
+mongoose.connect(MONGO_URI)
+  .then(() => console.log("✅ MongoDB connected"))
+  .catch(err => console.error("❌ MongoDB connection error:", err));
 
-// FAQs routes
+// Routes
+app.get("/", (req, res) => res.send("Chat Agent Backend Running"));
 app.use("/api/faqs", faqsRoutes);
 
-// Error handling
-app.use((req, res) => {
-  res.status(404).json({ message: "Route not found." });
-});
+// 404 handler
+app.use((req, res) => res.status(404).json({ message: "Route not found." }));
 
-// Start server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// >>>>>>> eadda9f (final commit)

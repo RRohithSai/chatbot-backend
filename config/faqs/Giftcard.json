@@ -35,7 +35,11 @@
     },
     {
       "question": "How will I receive the Gift Card that I purchased?",
+<<<<<<< HEAD
       "answer": "Once you complete your purchase, the gift card details will be sent to your registered email address and can also be viewed in the Okal app under ‘My Orders’ or ‘Gift Cards’ section."
+=======
+      "answer": "Once you complete your purchase, the gift card details will be sent to your registered email address and can also be viewed in the Zepto app under ‘My Orders’ or ‘Gift Cards’ section."
+>>>>>>> eadda9f (final commit)
     }
   ]
 }
