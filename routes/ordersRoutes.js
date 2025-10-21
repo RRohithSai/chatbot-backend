@@ -193,11 +193,7 @@ const router = express.Router();
 const fs = require("fs");
 const path = require("path");
 
-<<<<<<< HEAD
-const dbPath = path.join(__dirname, "../config/faqs/Orders_and_Products.json");
-=======
 const dbPath = path.join(__dirname, "../config/faqs/orders_and_products.json");
->>>>>>> eadda9f (final commit)
 let db = JSON.parse(fs.readFileSync(dbPath, "utf8"));
 
 function daysBetween(date1, date2) {

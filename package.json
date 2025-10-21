@@ -4,10 +4,7 @@
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "json": "^11.0.0",
-<<<<<<< HEAD
-=======
     "mongoose": "^8.19.1",
->>>>>>> eadda9f (final commit)
     "server": "^1.0.42"
   },
   "name": "chatbot_backend",
