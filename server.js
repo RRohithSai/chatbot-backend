@@ -151,3 +151,6 @@ app.use((req, res) => res.status(404).json({ message: "Route not found." }));
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
 // >>>>>>> eadda9f (final commit)
+
+
+//=mongodb://localhost:27017/okal_faqs
