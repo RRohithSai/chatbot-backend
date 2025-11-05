@@ -1,16 +1,10 @@
 {
   "category": "💳 Payment FAQs",
-  "faq's": [
+  "faqs": [
     {
       "question": "What are the modes of payment?",
-      "answer": "The following modes of payment are available on our app:",
-      "sub_queries": [
-        { "option": "a", "answer": "Cash on Delivery (COD)" },
-        { "option": "b", "answer": "Visa, Mastercard, and RuPay - Credit and Debit Cards" },
-        { "option": "c", "answer": "CRED Pay" },
-        { "option": "d", "answer": "Wallets (Freecharge, Mobikwik, Payzapp)" },
-        { "option": "e", "answer": "Pay Later" }
-      ]
+       "answer": "The following modes of payment are available on our app: UPI, Debit/Credit Cards, Net Banking, Okal Wallet, and Cash on Delivery (COD),Pay later"
+
     },
     {
       "question": "How do I change the mode of payment?",
